@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+
+.siteTitle{
+    color: blue;
+    font-family:'Josefin Sans', sans-serif;
+    text-align: center;
+    margin: 2.2em 2.4em;
+}
+
+.testButton {
+    border: none;
+    color: royalblue;
+    padding: 3em 7em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 9em 20em;
+    cursor: pointer;
+    
+}
+
+.personnage {
+    color: red;
+    
+}
+
+.style{
+    color: red;
+    
+}
+
+.profession{
+    color: red;
+}
