@@ -9,14 +9,22 @@
 }
 
 .testButton {
-    border: none;
-    color: royalblue;
-    padding: 3em 7em;
+    position: absolute;
+    width: 8em;
+    height: 8em;
+    left: 40em;
+    top: 10em;
+
+    background: linear-gradient(0deg, #232D40, #232D40), #C4C4C4;
+    border: 7px solid rgba(0, 0, 0, 0.76);
+    box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.5); 
+
+    padding: 1em 1em;
     text-align: center;
-    text-decoration: none;
+    text-decoration: aliceblue;
     display: inline-block;
     font-size: 16px;
-    margin: 9em 20em;
+    margin: 9em 2em;
     cursor: pointer;
     
 }
@@ -40,7 +48,7 @@
 
 
 .displayResultGenerator{
-    position: absolute;
+    position: relative;
     width: 40em;
     height: 30em;
     left: 73em;
@@ -57,4 +65,8 @@
 .resultGenerator{
     color: aliceblue;
     padding: 3em;
+}
+
+.textButtonGenerator{
+    color: aliceblue;
 }

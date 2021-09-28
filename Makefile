@@ -3,19 +3,22 @@
 all: stop build tag run test exec
 
 build:
-	docker build --force-rm --pull --tag ig .
+	docker build --force-rm --pull --tag d4rkheart/ideagenerator .
 
 tag:
-	docker tag ig ig:latest
+	docker tag d4rkheart/ideagenerator d4rkheart/ideagenerator:latest
 
 stop:
-	docker stop ig || true
+	docker stop d4rkheart/ideagenerator || true
 
 run: stop
-	docker run --interactive --tty --rm --publish 1337:80 --name ig --detach ig
+	docker run -it --rm -p 1337:80 --name ig d4rkheart/ideagenerator 
 
 test:
 	firefox http://localhost:1337	&
 
 exec:
-	docker exec -it ig bash
+	docker exec -it d4rkheart/ideagenerator:latest bash
+
+Kill: 
+	docker kill $(docker ps -q)       
