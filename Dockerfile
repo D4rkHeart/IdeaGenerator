@@ -1,3 +1,3 @@
-FROM node:latest
+FROM nginx
 
-COPY ./scripts.js ./index.html ./style.css ./topic.js /src/
+COPY ./scripts.js ./index.html ./style.css ./Topics.js /usr/share/nginx/html/

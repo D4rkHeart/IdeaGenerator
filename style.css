@@ -34,3 +34,27 @@
 .profession{
     color: red;
 }
+
+
+/*Design of the page*/
+
+
+.displayResultGenerator{
+    position: absolute;
+    width: 40em;
+    height: 30em;
+    left: 73em;
+    top: 10em;
+
+    background: #232D40;
+    border: 3px solid #FAED26;
+    box-sizing: border-box;
+    box-shadow: 5px 4px 7px 9px #000000;
+}
+
+/*TEXT*/
+
+.resultGenerator{
+    color: aliceblue;
+    padding: 3em;
+}
