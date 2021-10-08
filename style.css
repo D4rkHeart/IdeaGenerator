@@ -1,19 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
-
-
+.body{
+    display: inline-grid;
+}
 .siteTitle{
     color: blue;
     font-family:'Josefin Sans', sans-serif;
     text-align: center;
-    margin: 2.2em 2.4em;
+    display: inline-grid;
+    grid-column: 1;
+    grid-row : 1;
 }
 
 .testButton {
-    position: absolute;
+    display: inline-grid;
+    grid-column: 2;
+    grid-row : 4;
     width: 8em;
     height: 8em;
-    left: 40em;
-    top: 10em;
+    
 
     background: linear-gradient(0deg, #232D40, #232D40), #C4C4C4;
     border: 7px solid rgba(0, 0, 0, 0.76);
@@ -31,16 +35,26 @@
 
 .personnage {
     color: red;
+    display: inline-grid;
+    grid-column : 1;
+    grid-row: 2;
     
+     
 }
 
 .style{
     color: red;
+    display: inline-grid;
+    grid-column : 2;
+    grid-row: 2;
     
 }
 
 .profession{
     color: red;
+    display: inline-grid;
+    grid-column : 3;
+    grid-row: 2;
 }
 
 
@@ -48,12 +62,28 @@
 
 
 .displayResultGenerator{
-    position: relative;
+    display: inline-grid;
+    grid-column : 3;
+    grid-row: 4;
+
     width: 40em;
     height: 30em;
-    left: 73em;
-    top: 10em;
+    
+    background: #232D40;
+    border: 3px solid #FAED26;
+    box-sizing: border-box;
+    box-shadow: 5px 4px 7px 9px #000000;
+}
 
+.displayIdeachoice{
+    display: inline-grid;
+    grid-column : 1;
+    grid-row: 4;
+    margin-top: 2.9em;
+
+    width: 25em;
+    height: 25em;
+    
     background: #232D40;
     border: 3px solid #FAED26;
     box-sizing: border-box;
@@ -63,10 +93,33 @@
 /*TEXT*/
 
 .resultGenerator{
-    color: aliceblue;
-    padding: 3em;
+    padding: 4em 4em;
+    display: inline-grid;
+    
 }
 
 .textButtonGenerator{
-    color: aliceblue;
+    color: #FAED26;;
+}
+
+/*ICON*/
+
+.characterIconBackground{
+    display: inline-grid;
+    grid-column : 1;
+    grid-row: 1;
+
+    height: 6em;
+    width: 6em;
+    border-radius: 50%;
+    border: 0.4em solid rgba(0, 0, 0, 1);
+    background: linear-gradient(0deg, #232D40, #232D40), #C4C4C4;
+    box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.7);
+}
+
+.icon{
+    height: 5.3em;
+    width: 5.3em;
+    padding: 0.3em;
+    color: black;    
 }

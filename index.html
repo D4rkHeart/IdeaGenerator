@@ -6,17 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Draw Idea Generator</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./Topics.js"></script>
+    <!-- <script type="text/javascript" src="./Topics.js"></script> -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
     <script type="text/javascript" src="./scripts.js"></script>
 </head>
-<body>
+<body class="body">
+    <div class="displayIdeachoice"></div>
     <div class="displayResultGenerator">
         <p id="drawIdea" class="resultGenerator"> 
-        <span> You can draw a/an character </span><span class="personnage"></span> with a/an <span class="style"></span> style </span><span> who work as </span><span class="profession"></span>
+            <span class="characterIconBackground">
+            <img src="https://icons-for-free.com/iconfiles/png/512/suitcase+work+icon-1320165848716624003.png" class="icon"/>
+            </span>
+        <span class="personnage"></span><span class="style"></span></span><span class="profession"></span>
         </p>
     </div>
     <H1 class="siteTitle">Draw Idea Generator</H1>
-    <button class="testButton" type="button" width="2.3em" onclick="updateIdea()"><div class="textButtonGenerator">Click for an idea</div></button>
+    <button class="testButton" type="button" onclick="updateIdea()"><div class="textButtonGenerator">Click for an idea</div></button>
+    <input id="togglePersonnage" type="checkbox"></input>
+    <label>toggle on/off personnage</label>
 </body>
 </html>
