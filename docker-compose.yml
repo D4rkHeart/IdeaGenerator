@@ -1,0 +1,6 @@
+version: "3.4"
+services: 
+  ig: 
+    image: d4rkheart/ideagenerator
+    ports: 
+      - 1337:80

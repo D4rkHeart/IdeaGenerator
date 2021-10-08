@@ -11,8 +11,11 @@ tag:
 stop:
 	docker stop d4rkheart/ideagenerator || true
 
-run: stop
-	docker run -it --rm -p 1337:80 --name ig d4rkheart/ideagenerator 
+Topics.json: Topics.yml
+	ruby yml2json.rb $< > $@
+
+run:Topics.json
+	docker run -d --rm -p 1337:80 --name ig d4rkheart/ideagenerator  
 
 test:
 	firefox http://localhost:1337	&
@@ -20,5 +23,12 @@ test:
 exec:
 	docker exec -it d4rkheart/ideagenerator:latest bash
 
-Kill: 
-	docker kill $(docker ps -q)       
+kill: 
+	docker kill $$(docker ps -q)       
+
+	Topics.json 
+	docker-compose up - run the app 
+	docker-compose ps - what running 
+	docker-compose down - shut down 
+	docker-compose exec [service name] {nameoftheshell} - (exec)
+
